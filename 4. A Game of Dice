@@ -1,0 +1,23 @@
+import random
+
+def throw_dice(num_dice, num_sides):
+    """
+    This function simulates a player throwing a set of dice.
+    num_dice: number of dice to be thrown
+    num_sides: number of sides on each dice
+    returns: a list of the results of each dice throw
+    """
+    dice_results = []
+    for i in range(num_dice):
+        result = random.randint(1, num_sides)
+        dice_results.append(result)
+    return dice_results
+
+a=int(input("Enter no. Of dice to be thrown "))
+b=int(input("Enter no. Of sides on each dice" ))
+results = throw_dice(a, b)
+print(results)
+
+
+dice_pile = []
+dice_pile.extend(results)
