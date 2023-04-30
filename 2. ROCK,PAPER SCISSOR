@@ -1,0 +1,20 @@
+import random
+name=input("Enter your name-:")
+
+
+print(f"HELLO,{name} welcome to R,P,S game! in this you have to choose one option either it is R,P,S")
+choice=["R","P","S"]
+
+
+x=random.choice(choice)
+human = input("enter your choice from R,P,S-:")
+if human=="R"and x=="P":
+        print("congratulation,you won the match")
+elif human=="P"and x=="R":
+        print("you losse the match")
+if human == "R" and x == "s":
+        print("congratulation,you won the match")
+elif human=="S" and x=="R":
+        print("you loose the match")
+if human==x:
+        print("MATCH DRAW")
